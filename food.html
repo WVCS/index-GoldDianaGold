@@ -1,0 +1,68 @@
+<head>
+  <nav>
+  <li class="nav"><a href="index.html"> HOME </a> </li>
+  <li class="nav"><a href="food.html"> FOOD WEBSITE
+  </a> </li>
+  </nav>
+</head>
+<div class="container">
+    <div class="item1"> Pistachio Factory!</div>
+    <div class="item2">Order Online!!</div>
+    <div class="item3">Menu <br> Pistachio <br> Hot Pistachio</div>
+    <div class="item4">Hours <br> 9AM - 10PM
+  </div>
+    <div class="item5">About Us! <br> we make pistachios..?
+  
+  </div>
+    <div class="item6">Social Media Links</div>
+    <div class="item7">Employment Details</div>
+</div>
+
+<style>
+  nav {
+  list-style-type: none;
+  position: fixed;
+  background-color: #4F5D75;
+  width: 100%;
+  left: 0;
+  top: 0;
+} 
+.nav {
+     display: inline;
+     float: left;
+     padding: 10px;
+}
+.nav a:hover {
+  background-color: gray;
+}
+a{
+  text-decoration: none;
+  color: #70B77E;
+}
+ nav {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+body{
+  padding:80px 40px;
+}
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  
+  background-color: #4F5D75;
+  padding: 10px;
+  border-radius: 10px;
+}
+.container > div {
+  background-color: #70B77E;
+  border: 1px solid #fff;
+  padding: 40px;
+  font-size: 30px;
+  text-align: center;
+}
+.item1, .item6 {
+   grid-column: 1 / 3;
+}
+</style>
