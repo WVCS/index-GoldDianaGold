@@ -1,3 +1,99 @@
-<html>
-  <a href="../index.html"> Test to home </a>
-</html>
+<head>
+  <nav>
+  <li class="nav"><a href="index.html"> HOME </a> </li>
+  <li class="nav"><a href="event/home.html"> EVENT WEBSITE </a> </li>
+  </nav>
+
+  <title> Disquad Awards </title>
+
+<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<div class="container">
+    <div class="item1"> First Annual Disquad Award Ceramony <br>  <img src="Disquad Awards Logo.jpg"> </div>
+    <div class="item2"> Hosted by:  <img src="https://hoblist.s3.ap-south-1.amazonaws.com/celebrities/gallery/1568362027724_1.jpeg"></div>
+    <div class="item3"> Awards: <br> Cutest Member <br> Most Creative <br> Most Likely to Die <br> Best Producer</div>
+    <div class="item4"> Contestants: <br> Jacob V. <br> Sean Angeles <br> Nate Reyes <br> Baron Egaran</div>
+    <div class="item5"> <br> Date: <br> 2/21/22 - 2/25/22</div>
+    <div class="item6"> Sponsored By: <br> Spotify, Jack in The Box, and Riot Games </div>
+    <div class="item7"> Location: <br> Staples Center in Los Angeles</div>
+</div>
+
+<style>
+  nav {
+  list-style-type: none;
+  position: fixed;
+  background-color: gold;
+  width: 100%;
+  left: 0;
+  top: 0;
+} 
+.nav {
+     display: inline;
+     float: left;
+     padding: 10px;
+}
+.nav a:hover {
+  background-color: gray;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+ nav {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+body{
+  padding:80px 40px;
+}
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+.container > div {
+  background-color: gold;
+  border: 1px solid #fff;
+  padding: 40px;
+  font-size: 30px;
+  text-align: center;
+}
+.item1, .item6 {
+   grid-column: 1 / 3;
+}
+
+body {
+  background-image: url('https://wallpaperaccess.com/full/3053366.png');
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container > div {
+  background-color: maroon;
+  border: 1px solid #fff;
+  padding: 40px;
+  font-size: 30px;
+  text-align: center;
+}
+nav {
+  list-style-type: none;
+  position: fixed;
+  background-color: maroon;
+  width: 100%;
+  left: 0;
+  top: 0;
+} 
+}
+</style>
