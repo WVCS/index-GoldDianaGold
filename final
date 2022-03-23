@@ -1,0 +1,105 @@
+<head>
+  <nav>
+  <li class="nav"><a href="index.html"> HOME </a> </li>
+  <li class="nav"><a href="final.html"> FINAL </a> </li>
+  </nav>
+  <title> WV Detective Team </title>
+  
+</head>
+
+<body>
+ <center>
+   <br>
+   <br>
+   <h2> The Westview Detective Team </h2>
+ <table>
+        <tr>
+        <th> Captain <br> Tina Ziegler </th>
+        <th> Lead Detective <br> Ms. Parker </th>
+        <th> Photographer <br> Mr. Glover </th>
+        <th> DNA Analist <br> Ms. Heard </th>
+        </tr>
+    
+        <tr>
+         
+          <td> <img src="https://www.powayusd.com/PUSD/media/WVHS/images/Staff/TinaZiegler.jpg" > </td>
+          <td> <img src="https://www.powayusd.com/PUSD/media/WVHS/images/Staff/ShannonParker.jpg"> </td>
+          <td> <img src="https://www.powayusd.com/PUSD/media/WVHS/images/Staff/DarcelGlover.jpg"> </td>
+          <td> <img src="https://www.powayusd.com/PUSD/media/WVHS/images/Staff/TeriHeard.jpg"> </td>
+        </tr>
+      </table>
+   <h2> "With these four no crime goes unsolved..." <br> -Dwayne "The Rock" Johnson </h2>
+   
+   <table>
+        <tr>
+        <th> Want to Hire Us? </th>
+        <th> Tools at our Desposal </th>
+        </tr>
+    
+        <tr>
+          <td> <center> People can contact us for hire at a rate of $50 an hour, or by case at $499 per case. <br> <br> We will not take any cases that have been fabricated or in general seem untrustworthy or fake. <br> <br> To contact us please visit our location at 13500 Wolverine Way or sign up for our mailing list by clicking the image below. <br> <br><a href="https://www.powayusd.com/en-US/Schools/HS/WVHS/Home"><img src="http://s3-us-west-2.amazonaws.com/sportshub2-uploads-prod/files/sites/2103/2018/07/27175458/westview-claw-011.png" alt="HTML tutorial" style="width:100px;height:100px;"></a> </td>
+          
+          <td> <ol type="I">
+      <li> Specialy trained K-9 Unit</li>
+      <li> Team of DNA analists</li>
+      <li> Spyware to hack into computers </li>
+      <li> Cameras across all of San Diego</li>
+      <li> Device Cloaking</li>
+      <li> Advanced Internet Searches</li>
+    </ol> </td> 
+     </tr> </table>
+</body>
+
+<style> 
+nav {
+  list-style-type: none;
+  position: fixed;
+  background-color: #0492C2;
+  width: 100%;
+  left: 0;
+  top: 0;
+} 
+.nav {
+     display: inline;
+     float: left;
+     padding: 10px;
+}
+.nav a:hover {
+  background-color: gray;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+ nav {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+body {
+  background-image: url('https://wallpaperaccess.com/full/1627619.jpg');
+}
+
+table, th, td { 
+  border: solid black;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+h2 {
+  color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+  nav {
+  list-style-type: none;
+  position: fixed;
+  background-color: blue;
+  width: 100%;
+  left: 0;
+  top: 0;
+} 
+ body {
+  background-image: url('https://gray-weau-prod.cdn.arcpublishing.com/resizer/1j4OEW_FFBi6bdCwsqK7NK4O7Oo=/1200x675/smart/filters:quality(85)/cloudfront-us-east-1.images.arcpublishing.com/gray/MLVKU6YNZJDXROIL2HAW27R3VM.jpg');
+}
+}
+</style>
