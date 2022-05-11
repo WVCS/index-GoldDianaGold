@@ -1,1 +1,343 @@
+<head>
+  <nav>
+  <li class="nav"><a href="../index.html"> HOME </a> </li>
+  <li class="nav"><a href="amusment/code.html"> AMUSEMENT WEBSITE </a> </li>
+  </nav>
+
+  <title> The Shade Arcade </title>
+  
+  <body>
+    <center>
+ 
+<br>
+   <br>
+   <h2> Welcome to the </h2>
+    <img src="The Shade Arcade Logo.jpg"> 
+     <p id="Change"> Our Top Played Games </p>
+      <button type="button" onclick="document.getElementById('Change').style.color='red'"> That's not the right color? </button>
+     <table>
+        <tr>
+        <th> Pac-Man </th>
+        <th> Galaga </th>
+        <th> Donkey Kong </th>
+        <th> Star Wars </th>
+        </tr>
+    
+        <tr>
+         
+          <td> <img src="http://pa1.narvii.com/6061/d571225ff0ab6db6965d3145c3d59c61d17ac904_00.gif" > </td>
+          <td> <img src="https://i.pinimg.com/originals/da/20/4d/da204de815863e4aa877d14c91982bd4.gif"> </td>
+          <td> <img src="https://www.simbasible.com/wp-content/uploads/2021/04/1-3.gif"> </td>
+          <td> <img src="https://i.makeagif.com/media/10-26-2015/Y8y4cV.gif"> </td>
+        </tr>
+   <tr>
+        <th> Ms. Pac-Man </th>
+        <th> Dig Dug </th>
+        <th> Asteroids </th>
+        <th> Defender </th>
+        </tr>
+    
+        <tr>
+         
+          <td> <img src="https://images.genial.ly/59e059d30b9c21060cb4c2ec/5bbf17763292ef649e9b810f/4b1ba701-bae9-4d78-b24e-51417e6b1d16.gif?genial&1645833600063" > </td>
+          <td> <img src="https://thumbs.gfycat.com/ImportantHonestIndianhare-max-1mb.gif"> </td>
+          <td> <center> <img src="https://c.tenor.com/S1ytk-UrSy0AAAAM/asteroids-game.gif"> </td>
+          <td> <center> <img src="https://uploads-ssl.webflow.com/61df3d43836e37e0ac4d51f0/61e5cd3e0ca8cad0a89338f0_pf_0%209_1.gif"> </td>
+        </tr>
+      </table>
+  <br>
+  <br>
+      <h2> Check Out Our Biggest Dorks! </h2>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/VDNlW-11LN0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <br>
+  <br>
+ 
+      <h2> Here's some children being happy so we look credible :> </h2>
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="https://media.phillyvoice.com/media/images/kelly-sikkema-601276-unsplash.2e16d0ba.fill-735x490.jpg">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="https://media.istockphoto.com/photos/happy-young-friends-playing-arcade-game-machine-picture-id1330598142?k=20&m=1330598142&s=612x612&w=0&h=ZRW195hSLAth1jxnHy_buJdG07zM9-MbJt-CFxh8smI=" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="https://www.grandsierraresort.com/wp-content/uploads/2021/08/Enjoying-a-ride-game-at-Fun-Quest_16to91-scaled.jpg" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div> 
+  
+  <br>
+  <br>
+  <button onclick="topFunction()" id="topbtn"> Return to Top </button>
+  </body>
+  </html>
+  
+  <script>
+  let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+function hideFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop >100)
+    document.getElementById("topbtn").style.display = "block";
+  else {
+     document.getElementById("topbtn").style.display = "none";
+  }
+}
+
+window.onscroll = function() {hideFunction}  
+  </script>    
+ </body>
+ 
+ <style>
+ nav {
+  list-style-type: none;
+  position: fixed;
+  background-color: red;
+  width: 100%;
+  left: 0;
+  top: 0;
+} 
+.nav {
+     display: inline;
+     float: left;
+     padding: 10px;
+}
+.nav a:hover {
+  background-color: gray;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+ nav {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+body {
+  background-image: url('https://wallpaperaccess.com/full/782955.jpg');
+}
+
+table, th, td { 
+  border: solid black;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+h2 {
+  color: white;
+}
+ body {
+  background-image: url('https://images3.alphacoders.com/268/268495.jpg');
+}
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+h1, p {
+  color: #4af84a;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 750px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+p{
+  
+}
+#topbtn {
+  position: center;
+  botton: 2%;
+  right: 3%;
+  font-size: 15px;
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+#topbtn:hover {
+  cursor: cell;
+  border: dashed 3px
+}
+
+@media only screen and (max-width: 1024px) {
+  nav {
+  list-style-type: none;
+  position: fixed;
+  background-color: red;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+  body {
+  background-image: url('https://wallpaperaccess.com/full/782955.jpg');
+}
+} 
+</style>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+function hideFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop >100)
+    document.getElementById("topbtn").style.display = "block";
+  else {
+     document.getElementById("topbtn").style.display = "none";
+  }
+}
+
+window.onscroll = function() {hideFunction}
+</script>
 
