@@ -1,97 +1,124 @@
-<html>
-  <head>
-    <center>
-   <nav>
-    <li class="nav"><a href="index.html"> HOME </a> </li>
-    <li class="nav"><a href="lemonade.html"> NOUN PROJECT </a> </li>
+<head>
+  <nav>
+  <li class="nav"><a href="index.html"> HOME </a> </li>
+  <li class="nav"><a href="lemonade.html"> NOUN PROJECT </a> </li>
   </nav>
-  </head>
-  <body>
-    <br>
-     <h1> Lemonade! </h1>
-    <h2> Note: These are all my opinion and you may like any type of lemonade <3 </h2> 
-    
-    <center>
-    <h2> Types of Lemonade </h2>
-    
-    
-    <ol type="I">
+  
+  <title> Lovely Lemonade Website </title>
+  
+  <div class="container">
+    <div class="item1"> <br> <h2> Diana's Lovely Lemonade Website! </h2> Note: All stated on this website is personal opinion. </div>
+    <div class="item2"> Types of Lemonade: <ol type="I">
       <li> Regular Lemonade</li>
       <li> Strawberry Lemonade</li>
       <li> Watermellon Lemonade</li>
       <li> Sparkling Mint Lemonade</li>
       <li> Raspberry Lemonade</li>
       <li> Pineapple Lemonade</li>
-    </ol>
+    </ol> </div>
+    <div class="item3"> Good Lemonade: <br> Strawberry Lemonade <br> Regular Lemonade <br> <br> <img src="https://morethanmeatandpotatoes.com/wp-content/uploads/2020/05/Honey-Lemonade-7-480x480.jpg.webp"> </div>
+    <div class="item4"> Okay Lemonade: <br> Watermellon Lemonade <br> Rapsberry Lemonade <br> <br> <img src="https://deliciouslysprinkled.com/wp-content/uploads/2015/06/Watermelon-Lemonade-BLOG-480x480.jpg"> </div>
+    <div class="item5"> Bad Lemonade: <br> Mint Lemonade <br> Pineapple Lemonade <br> <br> <img src="https://www.passionforsavings.com/content/uploads/2022/03/Pineapple-drink-480x480.jpg"> </div>
+</div>
+  
+  <center>
+  <h2> Lemonade :> </h2>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/gl_zFBk5xOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <br>
+    <br>
+ <button onclick="topFunction()" id="topbtn"> Return to Top </button>
     
-      <table>
-        <tr>
-        <th> Great </th>
-        <th> Okay </th>
-        <th> Gross </th>
-        </tr>
-    
-        <tr>
-          <td> Strawberry Lemonade Regular Lemonade </td>
-          <td> Watermellon Lemonade Raspberry Lemonade </td>
-          <td> Mint Lemonade Pineapple Lemonade </td>
-          
-        </tr>
-        
-      </table>
-      <br>
-      
-      <div id="imagetable">
-        <img src= https://morethanmeatandpotatoes.com/wp-content/uploads/2020/05/Honey-Lemonade-7-480x480.jpg.webp>
-        
-        <img src= https://deliciouslysprinkled.com/wp-content/uploads/2015/04/Fresh-Strawberry-Lemonade-blog-480x480.jpg>
-        
-        <img src= https://deliciouslysprinkled.com/wp-content/uploads/2015/06/Watermelon-Lemonade-BLOG-480x480.jpg>
-        
-      </div>
-    </center>
-      
-    </body>
-    </html>
-    
-    <style>
-      h1, h2 {
-  text-decoration: underline;
+<style>
+  nav {
+  list-style-type: none;
+  position: fixed;
+  background-color: yellow;
+  width: 100%;
+  left: 0;
+  top: 0;
+} 
+.nav {
+     display: inline;
+     float: left;
+     padding: 10px;
+}
+.nav a:hover {
+  background-color: gray;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+ nav {
+  font-family: "Lucida Console", "Courier New", monospace;
 }
 
-body {
+body{
+  padding:80px 40px;
+}
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+.container > div {
   background-color: #FFF3B0;
-  color: #291F1E;
+  border: 1px solid gray;
+  padding: 40px;
+  font-size: 30px;
+  text-align: center;
 }
-
-
-table, th, td { 
-  border: solid black;
-  border-collapse: collapse;
-  width: 500px
+.item1, .item6 {
+   grid-column: 1 / 3;
 }
 
 ol {
   list-style-position: inside;
 }
 
-img {
-  border: groove 50px gray;
-  width: 250px
+body {
+  background-image: url('https://images.unsplash.com/photo-1624943233575-f44d3b89a0cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bGVtb24lMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&w=1000&q=80');
 }
 
-#imagetable {
-  padding:50px;
+img {
+  border: groove 50px Gray;
+  width: 480px
 }
-      .nav {
-  display: inline;
-  float: left;
-  padding: 5px;
+
+#topbtn {
+  position: center;
+  botton: 2%;
+  right: 3%;
+  font-size: 15px;
+  background-color: #FFF3B0;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
 }
-       nav {
-     width: 100%;
-   }
-       a {
-    color: black;
-      }
+
+#topbtn:hover {
+  cursor: cell;
+  border: dashed 3px
+}
     </style>
+    
+<script>
+  function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+function hideFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop >100)
+    document.getElementById("topbtn").style.display = "block";
+  else {
+     document.getElementById("topbtn").style.display = "none";
+  }
+}
+
+window.onscroll = function() {hideFunction}
+    </script>
